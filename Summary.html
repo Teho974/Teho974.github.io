@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Summary</title>
+        <link rel="stylesheet" href="variables.css">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            @media (min-width: 600px) {
+                p{
+                    background-color: red;
+                }
+            }
+            @media (max-width: 599px) {
+                p{
+                    background-color:blue;
+                }
+               
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is a heading(h1)</h1>
+        <h2 style="color: rgb(226, 168, 43); text-align: center;">This is a smaller heading tweaked with inline css(h2)</h2>
+        <p>This is a paragraphe(p)</p>
+        <ul>
+            <li>this is an unordered list (ul)</li>
+            <li>another item (li)</li>
+        </ul>
+        <ol>
+            <li>This is an ordered list (ol)</li>
+            <li>second item</li>
+        </ol>
+        <img src="porsche.png" alt="Porsche" width="300">
+        <a href="second_page.html">Click here</a>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Power</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Porsche</td>
+                        <td>GT3RS</td>
+                        <td>518HP</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>S5</td>
+                        <td>333HP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <form>
+                <input type="text" placeholder="Full Name" name="full_name">
+                <input type="submit">
+                <input type="password" placeholder="Password" name="password">
+                Favorite color ?
+                <input type="radio" name="color" value="red"> Red
+                <input type="radio" name="color" value="green"> Green
+                <input type="radio" name="color" value="blue"> Blue
+                <input type="radio" name="color" value="other"> Other
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Afghanistan">
+                    <option value="France"> 
+                    <option value="Italy">
+                </datalist>
+            </form>
+        </div>
+        <button>Click me</button>
+        <div id="container">
+            <div>1. Flexbox demo</div>
+            <div>2. Flexbox demo</div>
+            <div>3. Flexbox demo</div>
+            <div>4. Flexbox demo</div>
+            <div>5. Flexbox demo</div>
+            <div>6. Flexbox demo</div>
+            <div>7. Flexbox demo</div>
+        </div>
+
+        <div class="success">This is a success message</div>
+        <div class="warning">This is a warning message</div>
+        <div class="error">This is an error message</div>
+    </body>
+</html>
